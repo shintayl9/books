@@ -19,3 +19,4 @@ Mengetik kode dan menambahkan nama panggilan pada title app sebagai identitas ha
 
 Langkah 4: Tambah method getData()
 ![Screenshot books](images/image%204.png)
+![Screenshot books](images/image%205.png)
