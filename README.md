@@ -5,6 +5,7 @@ Kelas   : 2A TRPL
 
 #11 | Pemrograman Asynchronous
 
+
 **Praktikum 1: Mengunduh Data dari Web Service (API)**
 
 Langkah 1: Buat Project Baru
@@ -31,6 +32,7 @@ Maksud kode langkah 5 tersebut terkait substring dan catchError
 - catchError digunakan untuk menangani error yang mungkin akan terjadi saat memanggil fungsi getData(). Jika terjadi error, maka blok yang ada di catchError akan dijalankan untuk memastikan aplikasi tidak crash.
 ![Screenshot books](images/asynchronous.gif)
 
+
 **Praktikum 2: Menggunakan await/async untuk menghindari callbacks**
 
 Langkah 1: Buka file main.dart
@@ -49,4 +51,20 @@ Langkah 4: Run
 Maksud kode langkah 1 dan 2
 - Maksud kode langkah 1 adalah mendefinisikan tiga metode asynchronous masing-masing mengembalikan angka setelah 3 detik. Future.delayed digunakan untuk penundaan (delay) dalam simulasi pemanggilan API yang memerlukan waktu untuk merespon.
 - Maksud kode langkah 2 adalah mendefinisikan sebuah metode count() yang akan memanggil ketiga fungsi yang telah didefinisikan sebelumnya dan menghitung totalnya.count() akan menunggu hasil dari returnOneAsync(), returnTwoAsync(), returnThreeAsync() yang setelah 3 detik akan mengembalikan angka 1, 2, dan 3 lalu nilai kemudian ditambahkan ke total. Setelah ketiga nilai dijumlah, setState dipanggil untuk memperbarui UI dengan nilai total yang baru dihitung. total diubah menjadi tipe String agar dapat ditampilkan dalam widget Text.
-![Screenshot books](images/asynchronous1.gif)
+- ![Screenshot books](images/asynchronous1.gif)
+
+
+**Praktikum 3: Menggunakan Completer di Future**
+
+Langkah 1: Buka main.dart
+![Screenshot books](images/image%2010.png)
+
+Langkah 2: Tambahkan variabel dan method
+![Screenshot books](images/image%2011.png)
+
+Langkah 3: Ganti isi kode onPressed()
+![Screenshot books](images/image%2012.png)
+
+Langkah 4:
+
+Maksud kode langkah 2 adalah mendefinisikan 2 fungsi yaitu getNumber() dan calculate() yang berfungsi untuk mengatur pengembalian nilai dengan mengunakan Completer dalam Dart yang digunakan untuk menangani nilai yang akan datang (asynchronous) yang memungkinkan untuk kapan dan bagaimana nilai tersebut diselesaikan dan dikembalikan dalam operasi asynchronous.
