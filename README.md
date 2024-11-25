@@ -100,12 +100,11 @@ Maksud perbedaan kode langkah 1 dan 4
 - Pada langkah 1 menggunakan FutureGroup, lebih fleksibel dan memungkinkan untuk menangani grup Future secara lebih eksplisit dan kompleks, meskipun lebih rumit.
 - Pada langkah 4 menggunakan Future.wait, lebih sederhana dan lebih mudah dipahami untuk skenario dasar dimana hanya ingin menunggu beberapa Future untuk menyelesaikan dan mendapatkan hasilnya secara bersamaan dalam bentuk List.
 
-
 **Praktikum 5: Menangani Respon Error pada Async Code**
 
 Langkah 1: Buka file main.dart
 
-Menambahkan method ke dalam class _FuturePageState
+Menambahkan method ke dalam class \_FuturePageState
 ![Screenshot books](images/image%2018.png)
 
 Langkah 2: ElevatedButton
@@ -120,10 +119,11 @@ Langkah 3: Run
 
 Langkah 4: Tambah method handleError()
 
-Menambahkan kode di dalam class _FutureStatePage
+Menambahkan kode di dalam class \_FutureStatePage
 ![Screenshot books](images/image%2022.png)
 
 Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+
 - Hasilnya adalah setelah 2 detik maka akan muncul **Something terrible happened!**
 - Langkah 1: returnError
 
@@ -132,7 +132,6 @@ Simpel dan hanya mensimulasikan error tanpa menangani apa pun dan membutuhkan er
 - Langkah 4: handleError
 
 Menggabungkan pemanggilan fungsi returnError dengan logika error handling dan eksekusi akhir. Lebih lengkap dan siap pakai, terutama untuk memperbarui UI berdasarkan hasil eksekusi fungsi.
-
 
 **Praktikum 6: Menggunakan Future dengan StatefulWidget**
 
@@ -143,6 +142,7 @@ Langkah 2: Tambah permission GPS
 ![Screenshot books](images/image%2024.png)
 
 Langkah 3: Buat file geolocation.dart
+
 ![Screenshot books](images/image%2025.png)
 
 Langkah 4: Buat StatefulWidget
@@ -162,11 +162,10 @@ Langkah 8: Tambahkan animasi loading
 ![Screenshot books](images/image%2031.png)
 
 - Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method getPosition() dengan kode await Future.delayed(const Duration(seconds: 3));
-![Screenshot books](images/image%2032.png)
+  ![Screenshot books](images/image%2032.png)
 - Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
-Karena penggunaan Geolocator.requestPermission(); yang akan memunculkan prompt untuk meminta izin dari pengguna untuk memberikan data lokasi pada aplikasi.
+  Karena penggunaan Geolocator.requestPermission(); yang akan memunculkan prompt untuk meminta izin dari pengguna untuk memberikan data lokasi pada aplikasi.
 - ![Screenshot books](images/asynchronous6.gif)
-
 
 **Praktikum 7: Manajemen Future dengan FutureBuilder**
 
