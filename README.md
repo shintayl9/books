@@ -78,5 +78,18 @@ Langkah 6: Pindah ke onPressed()
 Mengganti kode
 ![Screenshot books](images/image%2014.png)
 
-- Maksud perbedaan kode langkah 2 dengan langkah 5-6 adalah Langkah 5 dan 6 menambah kemampuan untuk menangani kesalahan dengan baik dalam proses asynchronous, sementara langkah 2 hanya menangani penyelesaian normal tanpa mempertimbangkan kemungkinan error.
+- Maksud perbedaan kode langkah 2 dengan langkah 5-6 adalah langkah 2 hanya menangani penyelesaian normal tanpa mempertimbangkan kemungkinan error sementara langkah 5 dan 6 menambah kemampuan untuk menangani kesalahan dengan baik dalam proses asynchronous.
 - ![Screenshot books](images/asynchronous3.gif)
+
+
+**Praktikum 4: Memanggil Future secara paralel**
+
+Langkah 1: Buka file main.dart
+
+Menambahkan method ke dalam class _FuturePageState
+![Screenshot books](images/image%2015.png)
+
+Langkah 2: Edit onPressed()
+![Screenshot books](images/image%2016.png)
+
+Langkah 3: Run
