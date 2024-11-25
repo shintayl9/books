@@ -153,3 +153,16 @@ Langkah 5: Isi kode geolocation.dart
 ![Screenshot books](images/image%2028.png)
 
 Langkah 6: Edit main.dart
+![Screenshot books](images/image%2029.png)
+
+Langkah 7: Run
+![Screenshot books](images/image%2030.png)
+
+Langkah 8: Tambahkan animasi loading
+![Screenshot books](images/image%2031.png)
+
+- Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method getPosition() dengan kode await Future.delayed(const Duration(seconds: 3));
+![Screenshot books](images/image%2032.png)
+- Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
+Karena penggunaan Geolocator.requestPermission(); yang akan memunculkan prompt untuk meminta izin dari pengguna untuk memberikan data lokasi pada aplikasi.
+- 

@@ -24,15 +24,23 @@ class _LocationScreenState extends State<LocationScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final myWidget =
+        myPosition == '' ? const CircularProgressIndicator() : Text(myPosition);
+    ;
+
     return Scaffold(
-      appBar: AppBar(title: const Text('Current Location Shinta')),
-      body: Center(child: Text(myPosition)),
+      appBar: AppBar(
+          title: const Text('Current Location Shinta'),
+          backgroundColor: Colors.blue,
+          foregroundColor: Colors.white),
+      body: Center(child: myWidget),
     );
   }
 
   Future<Position> getPosition() async {
     await Geolocator.requestPermission();
     await Geolocator.isLocationServiceEnabled();
+    await Future.delayed(const Duration(seconds: 3));
     Position? position = await Geolocator.getCurrentPosition();
     return position;
   }
