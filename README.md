@@ -4,6 +4,7 @@ Kelas   : 2A TRPL
 
 
 #11 | Pemrograman Asynchronous
+
 Praktikum 1: Mengunduh Data dari Web Service (API)
 
 Langkah 1: Buat Project Baru
@@ -11,6 +12,7 @@ Menambahkan dependensi http dengan mengetik perintah flutter pub add http.
 ![Screenshot books](images/image%201.png)
 
 Langkah 2: Cek file pubspec.yaml
+
 ![Screenshot books](images/image%202.png)
 
 Langkah 3: Buka file main.dart
