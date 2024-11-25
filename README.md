@@ -132,3 +132,12 @@ Simpel dan hanya mensimulasikan error tanpa menangani apa pun dan membutuhkan er
 - Langkah 4: handleError
 
 Menggabungkan pemanggilan fungsi returnError dengan logika error handling dan eksekusi akhir. Lebih lengkap dan siap pakai, terutama untuk memperbarui UI berdasarkan hasil eksekusi fungsi.
+
+
+**Praktikum 6: Menggunakan Future dengan StatefulWidget**
+
+Langkah 1: install plugin geolocator
+![Screenshot books](images/image%2023.png)
+
+Langkah 2: Tambah permission GPS
+![Screenshot books](images/image%2024.png)
