@@ -20,3 +20,10 @@ Mengetik kode dan menambahkan nama panggilan pada title app sebagai identitas ha
 Langkah 4: Tambah method getData()
 ![Screenshot books](images/image%204.png)
 ![Screenshot books](images/image%205.png)
+
+Langkah 5: Tambah kode di ElevatedButton
+![Screenshot books](images/image%206.png)
+Maksud kode langkah 5 tersebut terkait substring dan catchError
+- substring(0, 450) digunakan untuk membatasi data dari API agar hanya menampilkan 450 karakter pertama agar data yang ditampilkan pada UI tidak terlalu panjang.
+- catchError digunakan untuk menangani error yang mungkin akan terjadi saat memanggil fungsi getData(). Jika terjadi error, maka blok yang ada di catchError akan dijalankan untuk memastikan aplikasi tidak crash.
+![Screenshot books](images/asynchronous.gif)
