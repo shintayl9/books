@@ -141,3 +141,15 @@ Langkah 1: install plugin geolocator
 
 Langkah 2: Tambah permission GPS
 ![Screenshot books](images/image%2024.png)
+
+Langkah 3: Buat file geolocation.dart
+![Screenshot books](images/image%2025.png)
+
+Langkah 4: Buat StatefulWidget
+![Screenshot books](images/image%2026.png)
+
+Langkah 5: Isi kode geolocation.dart
+![Screenshot books](images/image%2027.png)
+![Screenshot books](images/image%2028.png)
+
+Langkah 6: Edit main.dart
