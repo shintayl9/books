@@ -117,3 +117,18 @@ Langkah 3: Run
 ![Screenshot books](images/image%2020.png)
 ![Screenshot books](images/image%2021.png)
 ![Screenshot books](images/asynchronous5.gif)
+
+Langkah 4: Tambah method handleError()
+
+Menambahkan kode di dalam class _FutureStatePage
+![Screenshot books](images/image%2022.png)
+
+Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+- Hasilnya adalah setelah 2 detik maka akan muncul **Something terrible happened!**
+- Langkah 1: returnError
+
+Simpel dan hanya mensimulasikan error tanpa menangani apa pun dan membutuhkan error handling tambahan oleh pemanggil fungsi.
+
+- Langkah 4: handleError
+
+Menggabungkan pemanggilan fungsi returnError dengan logika error handling dan eksekusi akhir. Lebih lengkap dan siap pakai, terutama untuk memperbarui UI berdasarkan hasil eksekusi fungsi.
