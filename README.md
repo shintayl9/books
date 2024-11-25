@@ -19,14 +19,22 @@ Langkah 3: Buka file main.dart
 Mengetik kode dan menambahkan nama panggilan pada title app sebagai identitas hasil pekerjaan.
 ![Screenshot books](images/image%203.png)
 
+**Soal 1**
+![Screenshot books](images/image%203.png)
+
 Langkah 4: Tambah method getData()
 ![Screenshot books](images/image%204.png)
+![Screenshot books](images/image%205.png)
+
+**Soal 2**
+![Screenshot books](images/image%2037.png)
 ![Screenshot books](images/image%205.png)
 
 Langkah 5: Tambah kode di ElevatedButton
 ![Screenshot books](images/image%206.png)
 Maksud kode langkah 5 tersebut terkait substring dan catchError
 
+**Soal 3**
 - substring(0, 450) digunakan untuk membatasi data dari API agar hanya menampilkan 450 karakter pertama agar data yang ditampilkan pada UI tidak terlalu panjang.
 - catchError digunakan untuk menangani error yang mungkin akan terjadi saat memanggil fungsi getData(). Jika terjadi error, maka blok yang ada di catchError akan dijalankan untuk memastikan aplikasi tidak crash.
   ![Screenshot books](images/asynchronous.gif)
@@ -45,7 +53,9 @@ Langkah 3: Panggil count()
 ![Screenshot books](images/image%209.png)
 
 Langkah 4: Run
+![Screenshot books](images/image%2038.png)
 
+**Soal 4**
 Maksud kode langkah 1 dan 2
 
 - Maksud kode langkah 1 adalah mendefinisikan tiga metode asynchronous masing-masing mengembalikan angka setelah 3 detik. Future.delayed digunakan untuk penundaan (delay) dalam simulasi pemanggilan API yang memerlukan waktu untuk merespon.
@@ -64,7 +74,9 @@ Langkah 3: Ganti isi kode onPressed()
 ![Screenshot books](images/image%2012.png)
 
 Langkah 4:
+![Screenshot books](images/image%2039.png)
 
+**Soal 5**
 - Maksud kode langkah 2 adalah mendefinisikan 2 fungsi yaitu getNumber() dan calculate() yang berfungsi untuk mengatur pengembalian nilai dengan mengunakan Completer dalam Dart yang digunakan untuk menangani nilai yang akan datang (asynchronous) yang memungkinkan untuk kapan dan bagaimana nilai tersebut diselesaikan dan dikembalikan dalam operasi asynchronous.
 - ![Screenshot books](images/asynchronous2.gif)
 
@@ -76,6 +88,7 @@ Langkah 6: Pindah ke onPressed()
 Mengganti kode
 ![Screenshot books](images/image%2014.png)
 
+**Soal 6**
 - Maksud perbedaan kode langkah 2 dengan langkah 5-6 adalah langkah 2 hanya menangani penyelesaian normal tanpa mempertimbangkan kemungkinan error sementara langkah 5 dan 6 menambah kemampuan untuk menangani kesalahan dengan baik dalam proses asynchronous.
 - ![Screenshot books](images/asynchronous3.gif)
 
@@ -90,11 +103,13 @@ Langkah 2: Edit onPressed()
 ![Screenshot books](images/image%2016.png)
 
 Langkah 3: Run
+**Soal 7**
 ![Screenshot books](images/asynchronous4.gif)
 
 Langkah 4: Ganti variabel futureGroup
 ![Screenshot books](images/image%2017.png)
 
+**Soal 8**
 Maksud perbedaan kode langkah 1 dan 4
 
 - Pada langkah 1 menggunakan FutureGroup, lebih fleksibel dan memungkinkan untuk menangani grup Future secara lebih eksplisit dan kompleks, meskipun lebih rumit.
@@ -115,6 +130,7 @@ Mengganti kode
 Langkah 3: Run
 ![Screenshot books](images/image%2020.png)
 ![Screenshot books](images/image%2021.png)
+**Soal 9**
 ![Screenshot books](images/asynchronous5.gif)
 
 Langkah 4: Tambah method handleError()
@@ -122,6 +138,7 @@ Langkah 4: Tambah method handleError()
 Menambahkan kode di dalam class \_FutureStatePage
 ![Screenshot books](images/image%2022.png)
 
+**Soal 10**
 Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
 
 - Hasilnya adalah setelah 2 detik maka akan muncul **Something terrible happened!**
@@ -150,6 +167,7 @@ Langkah 4: Buat StatefulWidget
 
 Langkah 5: Isi kode geolocation.dart
 ![Screenshot books](images/image%2027.png)
+**Soal 11**
 ![Screenshot books](images/image%2028.png)
 
 Langkah 6: Edit main.dart
@@ -161,6 +179,7 @@ Langkah 7: Run
 Langkah 8: Tambahkan animasi loading
 ![Screenshot books](images/image%2031.png)
 
+**Soal 12**
 - Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method getPosition() dengan kode await Future.delayed(const Duration(seconds: 3));
   ![Screenshot books](images/image%2032.png)
 - Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
@@ -181,3 +200,11 @@ Langkah 3: Tambah initState()
 ![Screenshot books](images/image%2035.png)
 
 Langkah 4: Edit method build()
+![Screenshot books](images/image%2036.png)
+
+**Soal 13**
+- Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
+Ada perbedaan UI dengan praktikum sebelumnya, perbedaan UI terjadi karena pada praktikum sebelumnya pembaruan tampilan dilakukan secara manual menggunakan setState(), sedangkan pada kode dengan FutureBuilder pembaruan UI dikelola secara otomatis berdasarkan status Future (waiting atau done). FutureBuilder membuat kode lebih sederhana, reaktif, dan efisien karena tidak memerlukan variabel tambahan atau logika manual untuk memantau status loading dan hasil data.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 13".
+
+- Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.

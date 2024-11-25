@@ -27,17 +27,33 @@ class _LocationScreenState extends State<LocationScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final myWidget =
-        myPosition == '' ? const CircularProgressIndicator() : Text(myPosition);
-    ;
-
     return Scaffold(
-      appBar: AppBar(
-          title: const Text('Current Location Shinta'),
-          backgroundColor: Colors.blue,
-          foregroundColor: Colors.white),
-      body: Center(child: myWidget),
+      appBar: AppBar(title: Text('Current Location')),
+      body: Center(
+        child: FutureBuilder(
+            future: position,
+            builder: (BuildContext context, AsyncSnapshot<Position> snapshot) {
+              if (snapshot.connectionState == ConnectionState.waiting) {
+                return const CircularProgressIndicator();
+              } else if (snapshot.connectionState == ConnectionState.done) {
+                return Text(snapshot.data.toString());
+              } else {
+                return const Text('');
+              }
+            }),
+      ),
     );
+    // final myWidget =
+    //     myPosition == '' ? const CircularProgressIndicator() : Text(myPosition);
+    // ;
+
+    // return Scaffold(
+    //   appBar: AppBar(
+    //       title: const Text('Current Location Shinta'),
+    //       backgroundColor: Colors.blue,
+    //       foregroundColor: Colors.white),
+    //   body: Center(child: myWidget),
+    // );
   }
 
   Future<Position> getPosition() async {
