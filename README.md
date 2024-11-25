@@ -165,4 +165,4 @@ Langkah 8: Tambahkan animasi loading
 ![Screenshot books](images/image%2032.png)
 - Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
 Karena penggunaan Geolocator.requestPermission(); yang akan memunculkan prompt untuk meminta izin dari pengguna untuk memberikan data lokasi pada aplikasi.
-- 
+- ![Screenshot books](images/asynchronous6.gif)
