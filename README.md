@@ -5,7 +5,7 @@ Kelas   : 2A TRPL
 
 #11 | Pemrograman Asynchronous
 
-Praktikum 1: Mengunduh Data dari Web Service (API)
+**Praktikum 1: Mengunduh Data dari Web Service (API)**
 
 Langkah 1: Buat Project Baru
 Menambahkan dependensi http dengan mengetik perintah flutter pub add http.
@@ -16,6 +16,7 @@ Langkah 2: Cek file pubspec.yaml
 ![Screenshot books](images/image%202.png)
 
 Langkah 3: Buka file main.dart
+
 Mengetik kode dan menambahkan nama panggilan pada title app sebagai identitas hasil pekerjaan.
 ![Screenshot books](images/image%203.png)
 
@@ -29,3 +30,15 @@ Maksud kode langkah 5 tersebut terkait substring dan catchError
 - substring(0, 450) digunakan untuk membatasi data dari API agar hanya menampilkan 450 karakter pertama agar data yang ditampilkan pada UI tidak terlalu panjang.
 - catchError digunakan untuk menangani error yang mungkin akan terjadi saat memanggil fungsi getData(). Jika terjadi error, maka blok yang ada di catchError akan dijalankan untuk memastikan aplikasi tidak crash.
 ![Screenshot books](images/asynchronous.gif)
+
+**Praktikum 2: Menggunakan await/async untuk menghindari callbacks**
+
+Langkah 1: Buka file main.dart
+
+Menambahkan tiga method berisi kode seperti berikut di dalam class _FuturePageState.
+![Screenshot books](images/image%207.png)
+
+Langkah 2: Tambah method count()
+![Screenshot books](images/image%208.png)
+
+Langkah 3: Panggil count()
