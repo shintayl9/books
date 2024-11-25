@@ -218,3 +218,4 @@ Menambahkan kode untuk menangani ketika terjadi error. Kemudian hot restart.
 - Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
 Ada perbedaan UI dengan langkah sebelumnya, perbedaan UI terjadi karena langkah baru menampilkan data lokasi yang lebih terformat, seperti Latitude dan Longitude, dibandingkan langkah sebelumnya yang hanya menampilkan string saja dari objek Position. Selain itu langkah yang baru menambahkan penanganan error yang lebih informatif dengan pesan kesalahan jika terjadi error.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 14".
+![Screenshot books](images/asynchronous8.gif)
