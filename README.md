@@ -69,3 +69,14 @@ Langkah 4:
 
 - Maksud kode langkah 2 adalah mendefinisikan 2 fungsi yaitu getNumber() dan calculate() yang berfungsi untuk mengatur pengembalian nilai dengan mengunakan Completer dalam Dart yang digunakan untuk menangani nilai yang akan datang (asynchronous) yang memungkinkan untuk kapan dan bagaimana nilai tersebut diselesaikan dan dikembalikan dalam operasi asynchronous.
 - ![Screenshot books](images/asynchronous2.gif)
+
+Langkah 5: Ganti method calculate()
+![Screenshot books](images/image%2013.png)
+
+Langkah 6: Pindah ke onPressed()
+
+Mengganti kode
+![Screenshot books](images/image%2014.png)
+
+- Maksud perbedaan kode langkah 2 dengan langkah 5-6 adalah Langkah 5 dan 6 menambah kemampuan untuk menangani kesalahan dengan baik dalam proses asynchronous, sementara langkah 2 hanya menangani penyelesaian normal tanpa mempertimbangkan kemungkinan error.
+- ![Screenshot books](images/asynchronous3.gif)
