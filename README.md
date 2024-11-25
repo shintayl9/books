@@ -101,3 +101,19 @@ Maksud perbedaan kode langkah 1 dan 4
 - Pada langkah 4 menggunakan Future.wait, lebih sederhana dan lebih mudah dipahami untuk skenario dasar dimana hanya ingin menunggu beberapa Future untuk menyelesaikan dan mendapatkan hasilnya secara bersamaan dalam bentuk List.
 
 
+**Praktikum 5: Menangani Respon Error pada Async Code**
+
+Langkah 1: Buka file main.dart
+
+Menambahkan method ke dalam class _FuturePageState
+![Screenshot books](images/image%2018.png)
+
+Langkah 2: ElevatedButton
+
+Mengganti kode
+![Screenshot books](images/image%2019.png)
+
+Langkah 3: Run
+![Screenshot books](images/image%2020.png)
+![Screenshot books](images/image%2021.png)
+

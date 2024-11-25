@@ -107,38 +107,35 @@ class _FuturePageState extends State<FuturePage> {
     });
   }
 
+  Future returnError() async {
+    await Future.delayed(const Duration(seconds: 2));
+    throw ('Something terrible happened!');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Back from the Future'),
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
       ),
       body: Center(
         child: Column(children: [
           const Spacer(),
           ElevatedButton(
-            child: const Text('GO!'),
-            onPressed: () {
-              returnFG();
-              // count();
-              // setState(() {});
-              // getData().then((value) {
-              //   result = value.body.toString().substring(0, 450);
-              //   setState(() {});
-              // }).catchError((_) {
-              //   result = 'An error occurred';
-              //   setState(() {});
-              // });
-
-              getNumber().then((value) {
-                setState(() {
-                  result = value.toString();
-                });
-              }).catchError((e) {
-                result = 'An error occured';
-              });
-            },
-          ),
+              child: const Text('GO!'),
+              onPressed: () {
+                returnError().then((value) {
+                  setState(() {
+                    result = 'Success';
+                  });
+                }).catchError((onError) {
+                  setState(() {
+                    result = onError.toString();
+                  });
+                }).whenComplete(() => print('Complete'));
+              }),
           const Spacer(),
           Text(result),
           const Spacer(),
