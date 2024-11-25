@@ -166,3 +166,19 @@ Langkah 8: Tambahkan animasi loading
 - Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
 Karena penggunaan Geolocator.requestPermission(); yang akan memunculkan prompt untuk meminta izin dari pengguna untuk memberikan data lokasi pada aplikasi.
 - ![Screenshot books](images/asynchronous6.gif)
+
+
+**Praktikum 7: Manajemen Future dengan FutureBuilder**
+
+Langkah 1: Modifikasi method getPosition()
+
+Mengganti isi method
+![Screenshot books](images/image%2033.png)
+
+Langkah 2: Tambah variabel
+![Screenshot books](images/image%2034.png)
+
+Langkah 3: Tambah initState()
+![Screenshot books](images/image%2035.png)
+
+Langkah 4: Edit method build()
