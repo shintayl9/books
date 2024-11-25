@@ -57,6 +57,7 @@ Langkah 4: Run
 ![Screenshot books](images/image%2038.png)
 
 **Soal 4**
+
 Maksud kode langkah 1 dan 2
 
 - Maksud kode langkah 1 adalah mendefinisikan tiga metode asynchronous masing-masing mengembalikan angka setelah 3 detik. Future.delayed digunakan untuk penundaan (delay) dalam simulasi pemanggilan API yang memerlukan waktu untuk merespon.
@@ -104,6 +105,7 @@ Langkah 2: Edit onPressed()
 ![Screenshot books](images/image%2016.png)
 
 Langkah 3: Run
+
 **Soal 7**
 ![Screenshot books](images/asynchronous4.gif)
 
@@ -111,6 +113,7 @@ Langkah 4: Ganti variabel futureGroup
 ![Screenshot books](images/image%2017.png)
 
 **Soal 8**
+
 Maksud perbedaan kode langkah 1 dan 4
 
 - Pada langkah 1 menggunakan FutureGroup, lebih fleksibel dan memungkinkan untuk menangani grup Future secara lebih eksplisit dan kompleks, meskipun lebih rumit.
@@ -140,6 +143,7 @@ Menambahkan kode di dalam class \_FutureStatePage
 ![Screenshot books](images/image%2022.png)
 
 **Soal 10**
+
 Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
 
 - Hasilnya adalah setelah 2 detik maka akan muncul **Something terrible happened!**
@@ -185,7 +189,7 @@ Langkah 8: Tambahkan animasi loading
   ![Screenshot books](images/image%2032.png)
 - Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
   Karena penggunaan Geolocator.requestPermission(); yang akan memunculkan prompt untuk meminta izin dari pengguna untuk memberikan data lokasi pada aplikasi.
-- ![Screenshot books](images/asynchronous6.gif)
+![Screenshot books](images/asynchronous6.gif)
 
 **Praktikum 7: Manajemen Future dengan FutureBuilder**
 
@@ -205,6 +209,7 @@ Langkah 4: Edit method build()
 
 **Soal 13**
 - Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
+
 Ada perbedaan UI dengan praktikum sebelumnya, perbedaan UI terjadi karena pada praktikum sebelumnya pembaruan tampilan dilakukan secara manual menggunakan setState(), sedangkan pada kode dengan FutureBuilder pembaruan UI dikelola secara otomatis berdasarkan status Future (waiting atau done). FutureBuilder membuat kode lebih sederhana, reaktif, dan efisien karena tidak memerlukan variabel tambahan atau logika manual untuk memantau status loading dan hasil data.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 13".
 ![Screenshot books](images/asynchronous7.gif)
@@ -217,6 +222,7 @@ Menambahkan kode untuk menangani ketika terjadi error. Kemudian hot restart.
 
 **Soal 14**
 - Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
+
 Ada perbedaan UI dengan langkah sebelumnya, perbedaan UI terjadi karena langkah baru menampilkan data lokasi yang lebih terformat, seperti Latitude dan Longitude, dibandingkan langkah sebelumnya yang hanya menampilkan string saja dari objek Position. Selain itu langkah yang baru menambahkan penanganan error yang lebih informatif dengan pesan kesalahan jika terjadi error.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 14".
 ![Screenshot books](images/asynchronous8.gif)
