@@ -97,3 +97,7 @@ Langkah 3: Run
 
 Langkah 4: Ganti variabel futureGroup
 ![Screenshot books](images/image%2017.png)
+
+Maksud perbedaan kode langkah 1 dan 4
+- Pada langkah 1 menggunakan FutureGroup, lebih fleksibel dan memungkinkan untuk menangani grup Future secara lebih eksplisit dan kompleks, meskipun lebih rumit.
+- Pada langkah 2 menggunakan Future.wait, lebih sederhana dan lebih mudah dipahami untuk skenario dasar dimana hanya ingin menunggu beberapa Future untuk menyelesaikan dan mendapatkan hasilnya secara bersamaan dalam bentuk List.
