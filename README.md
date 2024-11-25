@@ -92,7 +92,7 @@ Mengganti kode
 
 **Soal 6**
 - Maksud perbedaan kode langkah 2 dengan langkah 5-6 adalah langkah 2 hanya menangani penyelesaian normal tanpa mempertimbangkan kemungkinan error sementara langkah 5 dan 6 menambah kemampuan untuk menangani kesalahan dengan baik dalam proses asynchronous.
-- ![Screenshot books](images/asynchronous3.gif)
+![Screenshot books](images/asynchronous3.gif)
 
 **Praktikum 4: Memanggil Future secara paralel**
 
@@ -188,6 +188,7 @@ Langkah 8: Tambahkan animasi loading
 - Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method getPosition() dengan kode await Future.delayed(const Duration(seconds: 3));
   ![Screenshot books](images/image%2032.png)
 - Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
+
   Karena penggunaan Geolocator.requestPermission(); yang akan memunculkan prompt untuk meminta izin dari pengguna untuk memberikan data lokasi pada aplikasi.
 ![Screenshot books](images/asynchronous6.gif)
 
