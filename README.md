@@ -1,16 +1,21 @@
-# books
+Nama    : Shinta Yulistiana 
+NIM     : 362358302076
+Kelas   : 2A TRPL
 
-A new Flutter project.
 
-## Getting Started
+#11 | Pemrograman Asynchronous
+Praktikum 1: Mengunduh Data dari Web Service (API)
 
-This project is a starting point for a Flutter application.
+Langkah 1: Buat Project Baru
+Menambahkan dependensi http dengan mengetik perintah flutter pub add http.
+![Screenshot books](images/image%201.png)
 
-A few resources to get you started if this is your first Flutter project:
+Langkah 2: Cek file pubspec.yaml
+![Screenshot books](images/image%202.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Langkah 3: Buka file main.dart
+Mengetik kode dan menambahkan nama panggilan pada title app sebagai identitas hasil pekerjaan.
+![Screenshot books](images/image%203.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Langkah 4: Tambah method getData()
+![Screenshot books](images/image%204.png)
