@@ -272,6 +272,7 @@ Langkah 8: Run
 **Soal 16**
 
 - Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+
   Jika klik setiap button, maka **Navigation First Screen** akan berubah sesuai warna yang dipilih. Karena ketika tombol di **Navigation Second Screen** ditekan, warna yang dipilih dikembalikan ke **Navigation First Screen** melalui Navigator.pop, lalu fungsi \_navigateAndColor menangkap warna tersebut, memperbarui properti latar belakang, dan akan ada pembaruan UI dengan setState, sehingga background **Navigation First Screen** berubah sesuai tombol warna yang dipilih.
 - Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
   ![Screenshot books](images/image%2049.png)
@@ -299,3 +300,11 @@ Mengubah properti home
 
 Langkah 6: Run
 ![Screenshot books](images/image%2057.png)
+
+**Soal 17**
+
+- Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+
+Jika klik setiap button, maka **Navigation Dialog Screen** akan berubah sesuai warna yang dipilih. Karena ketika tombol di **Very important question** ditekan, warna yang dipilih dikembalikan ke **Navigation Dialog Screen** melalui Navigator.pop, lalu fungsi \_navigateAndColor menangkap warna tersebut, memperbarui properti latar belakang, dan akan ada pembaruan UI dengan setState, sehingga background **Navigation Dialog Screen** berubah sesuai tombol warna yang dipilih.
+- Gantilah 3 warna pada langkah 3 dengan warna favorit Anda!
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 17".
