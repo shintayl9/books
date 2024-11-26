@@ -16,10 +16,17 @@ class _NavigationDialogScreenState extends State<NavigationDialogScreen> {
       backgroundColor: color,
       appBar: AppBar(
         title: const Text('Navigation Dialog Screen Shinta'),
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
       ),
       body: Center(
-        child:
-            ElevatedButton(child: const Text('Change Color'), onPressed: () {
+        child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+              foregroundColor: Colors.black,
+            ),
+            child: const Text('Change Color'),
+            onPressed: () {
               _showColorDialog(context);
             }),
       ),
@@ -36,19 +43,22 @@ class _NavigationDialogScreenState extends State<NavigationDialogScreen> {
             content: const Text('Please choose a color'),
             actions: <Widget>[
               TextButton(
-                  child: const Text('Red'),
+                  child:
+                      const Text('Grey', style: TextStyle(color: Colors.blue)),
                   onPressed: () {
-                    color = Colors.red.shade700;
+                    color = Colors.grey.shade700;
                     Navigator.pop(context, color);
                   }),
               TextButton(
-                  child: const Text('Green'),
+                  child:
+                      const Text('Green', style: TextStyle(color: Colors.blue)),
                   onPressed: () {
                     color = Colors.green.shade700;
                     Navigator.pop(context, color);
                   }),
               TextButton(
-                  child: const Text('Blue'),
+                  child:
+                      const Text('Blue', style: TextStyle(color: Colors.blue)),
                   onPressed: () {
                     color = Colors.blue.shade700;
                     Navigator.pop(context, color);
