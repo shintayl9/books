@@ -277,3 +277,25 @@ Langkah 8: Run
   ![Screenshot books](images/image%2049.png)
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 16".
   ![Screenshot books](images/asynchronous9.gif)
+
+**Praktikum 9: Memanfaatkan async/await dengan Widget Dialog**
+
+Langkah 1: Buat file baru navigation_dialog.dart
+![Screenshot books](images/image%2052.png)
+
+Langkah 2: Isi kode navigation_dialog.dart
+![Screenshot books](images/image%2053.png)
+
+Langkah 3: Tambah method async
+![Screenshot books](images/image%2054.png)
+
+Langkah 4: Panggil method di ElevatedButton
+![Screenshot books](images/image%2055.png)
+
+Langkah 5: Edit main.dart
+
+Mengubah properti home
+![Screenshot books](images/image%2056.png)
+
+Langkah 6: Run
+![Screenshot books](images/image%2057.png)
