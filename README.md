@@ -227,3 +227,30 @@ Menambahkan kode untuk menangani ketika terjadi error. Kemudian hot restart.
 Ada perbedaan UI dengan langkah sebelumnya, perbedaan UI terjadi karena langkah baru menampilkan data lokasi yang lebih terformat, seperti Latitude dan Longitude, dibandingkan langkah sebelumnya yang hanya menampilkan string saja dari objek Position. Selain itu langkah yang baru menambahkan penanganan error yang lebih informatif dengan pesan kesalahan jika terjadi error.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 14".
 ![Screenshot books](images/asynchronous8.gif)
+
+
+**Praktikum 8: Navigation route dengan Future Function**
+
+Langkah 1: Buat file baru navigation_first.dart
+![Screenshot books](images/image%2041.png)
+
+Langkah 2: Isi kode navigation_first.dart
+![Screenshot books](images/image%2042.png)
+
+Langkah 3: Tambah method di class _NavigationFirstState
+![Screenshot books](images/image%2043.png)
+
+Langkah 4: Buat file baru navigation_second.dart
+![Screenshot books](images/image%2044.png)
+
+Langkah 5: Buat class NavigationSecond dengan StatefulWidget
+![Screenshot books](images/image%2045.png)
+
+Langkah 6: Edit main.dart
+
+Melakukan edit properti home.
+![Screenshot books](images/image%2046.png)
+
+Langkah 8: Run
+![Screenshot books](images/image%2047.png)
+![Screenshot books](images/image%2048.png)
