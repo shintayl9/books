@@ -237,6 +237,13 @@ Langkah 1: Buat file baru navigation_first.dart
 Langkah 2: Isi kode navigation_first.dart
 ![Screenshot books](images/image%2042.png)
 
+**Soal 15**
+- Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+![Screenshot books](images/image%2050.png)
+![Screenshot books](images/image%2051.png)
+- Silakan ganti dengan warna tema favorit Anda.
+
+
 Langkah 3: Tambah method di class _NavigationFirstState
 ![Screenshot books](images/image%2043.png)
 
@@ -254,3 +261,10 @@ Melakukan edit properti home.
 Langkah 8: Run
 ![Screenshot books](images/image%2047.png)
 ![Screenshot books](images/image%2048.png)
+
+**Soal 16**
+- Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+Jika klik setiap button, maka **Navigation First Screen** akan berubah sesuai warna yang dipilih. Karena ketika tombol di **Navigation Second Screen** ditekan, warna yang dipilih dikembalikan ke **Navigation First Screen** melalui Navigator.pop, lalu fungsi _navigateAndColor menangkap warna tersebut, memperbarui properti latar belakang, dan akan ada pembaruan UI dengan setState, sehingga background **Navigation First Screen** berubah sesuai tombol warna yang dipilih. 
+- Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
+![Screenshot books](images/image%2049.png)
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 16".

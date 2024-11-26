@@ -16,10 +16,16 @@ class _NavigationFirstState extends State<NavigationFirst> {
     return Scaffold(
       backgroundColor: color,
       appBar: AppBar(
-        title: const Text('Navigation First Screen'),
+        title: const Text('Navigation First Screen Shinta'),
+        backgroundColor: Colors.blueAccent,
+        foregroundColor: Colors.white,
       ),
       body: Center(
         child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+              foregroundColor: Colors.black,
+            ),
             child: const Text('Change Color'),
             onPressed: () {
               _navigateAndGetColor(context);
